@@ -1,7 +1,6 @@
-import re
 import os
 import sys
-from os import path
+import re
 import datetime
 import  requests
 from bs4 import BeautifulSoup
@@ -10,12 +9,10 @@ from wordcloud import WordCloud
 import codecs
 import jieba
 #import jieba.analyse as analyse
-from scipy.misc import imread
-import matplotlib.pyplot as plt
-from PIL import Image, ImageDraw, ImageFont
+# from scipy.misc import imread
+# import matplotlib.pyplot as plt
+# from PIL import Image, ImageDraw, ImageFont
 import itchat
-
-
 
 
 def cur_file_dir():
@@ -24,7 +21,6 @@ def cur_file_dir():
         return path
     elif os.path.isfile(path):
         return os.path.dirname(path)
-
 
 
 def get_title():
